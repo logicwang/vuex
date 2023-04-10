@@ -1,23 +1,27 @@
-
-<template>
-  <div>
-    <div>{{ count }}</div>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "VueApp",
-  data() {
-    return {};
-  },
-  computed: {
-    count() {
-      return store.state.count;
-    },
-  },
-};
-</script>
-
-<style  scoped>
-</style>
+<template>  
+    <div>  
+      <p>{{ message }}</p>  
+      xxx
+    </div>  
+  </template>
+  
+  <script>  
+  import Vuex from 'vuex'
+  export default {  
+    name: 'MyComponent',  
+    setup() {  
+      const store = new Vuex.Store({  
+        states: {  
+          message: {  
+            default: ''  
+          }  
+        }  
+      })
+  
+      return {  
+        message: store.state.message  
+      }  
+    }  
+  }
+  </script>  
+  
