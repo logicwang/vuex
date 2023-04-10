@@ -17,6 +17,10 @@ export default new Router({
             path: '/pagetwo',
             component: () => import('../view/pagetwo.vue'),
         },
+        {
+            path: '/vuex',
+            component: () => import('../view/vuex.vue'),
+        },
     ]
 })
 
