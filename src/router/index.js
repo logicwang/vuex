@@ -29,6 +29,10 @@ export default new Router({
             path: '/Mutation',
             component: () => import('../view/Mutation.vue'),
         },
+        {
+            path: '/MutationComp',
+            component: () => import('../view/MutationComp.vue'),
+        },
     ]
 })
 

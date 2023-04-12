@@ -14,20 +14,15 @@ export default new Vuex.Store({
     user,
     actions,
     getters,
+
+
+    // state: {
+    //     count: 0
+    //   },
+    //   mutations: {
+    //     increment(state) {
+    //       state.count++
+    //     }
+    //   }
 })
 
-
-export const store = new Vuex.Store({
-    state: {
-      count: 0, // 初始状态
-    },
-    
-    mutations: {
-      increment(state) {
-        state.count++; // 改变 state 的值
-      },
-      decrement(state) {
-        state.count--; // 改变 state 的值
-      }
-    }
-  });
